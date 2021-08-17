@@ -35,6 +35,15 @@ body {
   display: grid;
   place-content: center;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 img {
   max-width: 100%;
@@ -188,7 +197,7 @@ footer {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(335, 100%, 65%);
 }
 
 /*---media queries-----------*/

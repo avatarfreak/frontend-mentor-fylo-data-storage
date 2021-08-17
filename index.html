@@ -17,6 +17,7 @@
     <header>
       <div class="logo">
         <img src="./images/logo.svg" alt="Fylo">
+        <h1 class="visually-hidden">Fylo</h1>
       </div>
 
       <ul>
@@ -30,8 +31,9 @@
       <p>You’ve used <span class="consumed">815 GB</span> of your storage</p>
       <div class="storage">
         <div class="progress">
+          <input type="range" id="slider" min="0" max="1000" value="815" step="10" class="bar">
           <label for="slider">
-            <input type="range" id="slider" min="0" max="1000" value="815" class="bar">
+            <span class="visually-hidden">input slider</span>
           </label>
         </div>
         <div class="value">
