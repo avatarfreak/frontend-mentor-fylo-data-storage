@@ -20,6 +20,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-size: var(--fs-size-sm);
   color: var(--clr-neutral-100);
@@ -177,6 +178,7 @@ span.consumed {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 footer {
   margin-top: 5rem;
 }
@@ -187,4 +189,47 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*---media queries-----------*/
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: var(--clr-neutral-130);
+    background-image: url("../images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 50%;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .info {
+    width: 536px;
+    height: 158px;
+    align-self: flex-end;
+    text-align: left;
+    position: relative;
+  }
+  .detail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -3rem;
+    transform: translateX(25%);
+  }
+  .detail:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-top: 2rem solid #fff;
+    border-left: 2rem solid transparent;
+    margin-bottom: -1rem;
+  }
 }
