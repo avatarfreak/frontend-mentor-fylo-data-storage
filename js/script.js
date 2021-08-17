@@ -13,7 +13,7 @@ const display = (...args) => {
   slider.style.background = `linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 60%)) 0 / ${percent}% 100% no-repeat`;
 };
 
-//Change input
+//Change input and calculate value
 slider.addEventListener("input", (evt) => {
   const value = Number(evt.target.value);
   const consumed = value;
